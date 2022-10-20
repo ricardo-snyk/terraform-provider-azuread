@@ -7,7 +7,7 @@ import (
 	"github.com/Azure/go-autorest/autorest"
 )
 
-//todo move to azure helpers
+// todo move to azure helpers
 func ResponseWasNotFound(resp autorest.Response) bool {
 	return ResponseWasStatusCode(resp, http.StatusNotFound)
 }
